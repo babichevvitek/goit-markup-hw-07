@@ -18,7 +18,7 @@
   
   }
   
-  .hero_center {
+  .hero__center {
    
     text-align: center;
     margin-left: auto;
@@ -26,7 +26,7 @@
     width: 696px;
     }
     
-    .hero_title{
+    .hero__title{
     margin-top: 0;
     margin-bottom: 30px;
   
@@ -38,7 +38,7 @@
     text-transform: uppercase; 
   }
   
-  .hero_button{
+  .hero__button{
     position: relative;
     display:inline-block;
     border-radius: 4px;
@@ -46,7 +46,7 @@
     padding: 10px 32px;
     min-width: 200px;
   
-   color: $hero-text-color;
+   color: &hero-text-color;
    background-color: $accent-color;
    
    font-family: Roboto;
@@ -59,9 +59,9 @@
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
   }
-  .hero_button  {
- 
+  .hero__button{
     &:hover{
-        background-color:$button-text-color; 
-    }  
+        background-color:var(--button-text-color); 
+    }
+      
   } 
