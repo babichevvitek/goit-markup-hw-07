@@ -1,3 +1,26 @@
-body{
-    background-color: brown;
+.body-studio {
+  font-family: "Roboto",sans-serif;
+  background-color: $hero-text-color;
+  color: $title-text-color;
 }
+
+
+@import "./utils/variables";
+@import "./components/container";
+@import "./components/page-header";  
+@import "./components/logo";
+@import "./components/main-nav";
+@import "./components/hero";
+@import "./components/section";
+@import "./components/working";
+@import "./components/team-profesionals"; 
+@import "./components/workers";
+@import "./components/clients";
+@import "./components/portfolio";
+@import "./components/backdrop";
+@import "./components/footer";
+
+
+
+
+  
