@@ -128,6 +128,12 @@ ul,p {
 .link.current{
   color: var(--accent-color);
 }
+
+
+
+
+
+
 .contact-list{
   display: flex;
   margin-left: auto;
@@ -277,6 +283,10 @@ bottom: -1px;
   background-color:var(--button-text-color);   
 }  
   /*-- Модальное окно --*/
+
+
+
+  
 
 .backdrop {
   position: fixed;
@@ -627,6 +637,14 @@ color: var(--feature-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 } 
 
+
+
+
+
+
+
+
+
 .section{
  padding-top: 94px;
  padding-bottom: 94px;
@@ -677,9 +695,12 @@ color: var(--feature-text-color);
 
 .section-list{
   list-style: none;
+
 }
 
-      /* Что мы делаем */ 
+
+   /* Что мы делаем */ 
+
 .working{
  padding-top: 0;
  padding-bottom: 94px;
@@ -735,12 +756,7 @@ color: var(--feature-text-color);
  color: var(--hero-text-color);
 }
 
-.the-best{
-  background: var(--fon-text-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 
-}
 
 /* Наша команда */
 
@@ -845,6 +861,10 @@ fill: var(--hero-text-color);
   margin-right: 30px;
 }
 
+
+
+
+
    /*--Клиенты--*/
   
 .clients{ 
@@ -940,6 +960,11 @@ background-color: var(--hero-text-color);
 
 
 /*-- Подвал--*/
+
+
+
+
+
 
 .footer-link{
   display: block;

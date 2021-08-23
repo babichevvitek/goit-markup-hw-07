@@ -1,0 +1,106 @@
+.the-best{
+    background: $fon-text-color;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  
+  }
+.team{
+    margin-bottom: 50px;
+    color: $title-text-color;
+    background: $fon-text-color;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+   }
+   
+   .team__people{
+     padding: 30px 32px;
+   }
+   
+   .team__list{
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: $title-text-color;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+   }
+   
+   .team__profession{
+    color: $feature-text-color;
+    font-family: Roboto;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+   }
+   
+   .team__professionals-list{
+     display: flex;
+     background: $fon-text-color;
+     list-style: none;
+   }
+   
+   .team__social{
+     display:flex ;
+     list-style: none;
+     justify-content: center;
+   }
+   
+   .team__link{
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: none;
+     padding: 0;
+    width: 44px;
+    height: 44px;
+    fill: #AFB1B8;
+    border-radius: 50%; 
+    background-color: $icon-background-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+   } 
+   
+   .team__item{
+     margin-right: 10px;
+   }
+   
+   .team__item:last-child{
+     margin-right: 0;
+   }
+   
+   .team__icon{
+     width: 20px;
+     height: 20px;
+   }
+   
+   .team__link{
+     &:hover,
+     &:focus{
+        cursor: pointer;
+        background-color: $button-text-color;
+        fill: $hero-text-color; 
+      }
+    
+    }
+   
+   
+   
+   .team__workers{
+     background-color: $hero-text-color;
+     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+     border-radius: 0px 0px 4px 4px;
+   }
+   
+   .team__workers:not(:last-child) {
+     margin-right: 30px;
+   }
+   

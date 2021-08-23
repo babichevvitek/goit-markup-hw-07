@@ -46,7 +46,7 @@
     padding: 10px 32px;
     min-width: 200px;
   
-   color: &hero-text-color;
+   color: $hero-text-color;
    background-color: $accent-color;
    
    font-family: Roboto;
@@ -61,7 +61,7 @@
   }
   .hero__button{
     &:hover{
-        background-color:var(--button-text-color); 
+        background-color:  $button-text-color; 
     }
       
   } 
