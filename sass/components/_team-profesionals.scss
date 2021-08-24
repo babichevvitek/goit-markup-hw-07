@@ -42,10 +42,14 @@
     letter-spacing: 0.03em;
    }
    
-   .team__professionals-list{
+   .team__professionals{
      display: flex;
      background: $fon-text-color;
      list-style: none;
+   }
+
+   .team__professionals{
+     @extend %list
    }
    
    .team__social{
@@ -61,12 +65,14 @@
      justify-content: center;
      border: none;
      padding: 0;
-    width: 44px;
-    height: 44px;
-    fill: #AFB1B8;
-    border-radius: 50%; 
-    background-color: $icon-background-color;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+     width: 44px;
+     height: 44px;
+     fill: #AFB1B8;
+     border-radius: 50%; 
+     background-color: $icon-background-color;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    
+     
    } 
    
    .team__item{
@@ -82,16 +88,16 @@
      height: 20px;
    }
    
-   .team__link{
-     &:hover,
-     &:focus{
-        cursor: pointer;
-        background-color: $button-text-color;
-        fill: $hero-text-color; 
-      }
-    
-    }
    
+   .team__link{
+    &:hover,
+    &:focus{
+       cursor: pointer;
+       background-color: $button-text-color;
+       fill: $hero-text-color; 
+     }
+   
+   }
    
    
    .team__workers{

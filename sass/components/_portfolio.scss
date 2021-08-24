@@ -1,0 +1,200 @@
+.body-portfolio{
+    background-color: $hero-text-color;
+   } 
+   
+   .text{
+       @extend %visually-hidden
+   }
+
+   .page-header {                                                                                       
+     border-bottom: 1px solid #ECECEC;
+   } 
+   
+   .poster{
+     padding-top: 94px;
+     padding-bottom: 94px;
+   }
+   
+   .site__buttons{
+     position: relative;
+     border-radius: 4px;
+     text-align: center;
+     padding: 6px 22px;
+     border-color: transparent;
+     color: $title-text-color;
+     font-family: Roboto;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.85;
+     cursor: pointer;
+     letter-spacing: 0.03em;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+      &:hover,
+      &:focus{
+        color: $hero-text-color;
+        background-color: $accent-color ;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      }
+    
+   }
+   
+   .all{
+     color: $hero-text-color;
+     background-color: $accent-color;
+   }
+   
+   .site{
+     display: flex;
+     margin-top: 0;
+     margin-bottom: 50px;
+     justify-content: center;
+   }
+   .site{
+       @extend %list
+   }
+
+   .site__two{
+     margin-left: 8px;
+   }
+   
+   .site__two:first-child{ 
+     margin-left: 0;
+    }
+   
+   
+    
+    
+    
+   
+   
+   
+   .pictures{
+     
+     display: flex;
+     flex-wrap: wrap;
+    
+   }
+   
+   .portfolio{
+    margin-right: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+     width: 370px;
+   }
+
+   .portfolio__sites{
+     position: relative;
+     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     display: block;
+   
+       &:hover,
+       &:focus{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      }
+    }
+   
+    img {
+     display: block;
+     max-width: 100%;
+     height: auto;   
+    } 
+   
+   .signature{
+     padding-top: 20px;
+     padding-bottom: 20px;
+     padding-left: 24px;
+     padding-right: 24px;
+     border-right: 1px solid #EEEEEE;
+     border-bottom: 1px solid #EEEEEE;
+     border-left: 1px solid #EEEEEE;
+   }
+   
+   .portfolio:nth-child(3n) {
+     margin-right: 0;
+     }
+   
+   .portfolio:nth-child(n + 7) {
+    margin-bottom: 0;
+   }
+   
+   .portfolio:nth-child(-n + 3) {
+   margin-top: 0;
+   }
+   
+   .site-nav.link.current{
+    color: $accent-color;
+   }
+   
+   .portfolio{
+   @extend %list
+   }
+   
+   .portfolio__sites{
+    text-decoration: none;
+   }
+   
+   .signature__decoration{
+    margin-top: 0;
+    margin-bottom: 4px;
+    color: $title-text-color;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+   }
+   
+   .signature__text{
+    color: $feature-text-color;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+   }
+   
+   .portfolio__thumb{
+     position: relative;
+     overflow: hidden;
+   }
+   
+   .portfolio__overlay{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     transform: translateY(101%);
+     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     background: rgba(33, 150, 243, 0.9);
+   }
+   
+   
+   .portfolio__sites:hover .portfolio__overlay,
+   .portfolio__sites:focus .portfolio__overlay{
+     transform: translateY(0);
+     opacity: 1;
+   }
+
+   .portfolio__paragraph{
+     position: absolute;
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: normal;
+     width: 100%;
+     height: 100%;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+   
+     padding: 63px 24px;
+    
+     font-size: 18px;
+     line-height: 1.55;
+     color: $hero-text-color;
+     letter-spacing: 0.03em;
+     opacity: 1;
+    
+    
+    }

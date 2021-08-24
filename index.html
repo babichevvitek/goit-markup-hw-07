@@ -31,6 +31,7 @@
                       <li class="main-nav__item"><a href="" class="main-nav__link">Контакты </a></li>
                     </ul>
                </nav>
+
                 <ul class="contact">
                     <li class="contact__item">
                         <a href="mailto:info@devstudio.com" class="contact__link">
@@ -136,24 +137,24 @@
                       
                         <li class="working__photo">
                             <img src="./images/img1.jpg" alt= "Ноут" width="370"> 
-                            <div class="working__photo-box">
-                                <p class="working__photo-text">десктопные приложения</p>
+                            <div class="working__box">
+                                <p class="working__text">десктопные приложения</p>
                             </div>
                          </li>
 
 
                           <li class="working__photo" >
                              <img src="./images/img2.jpg" alt= "Телефон" width="370"> 
-                             <div class="working__photo-box">
-                                <p class="working__photo-text">мобильные приложения</p>
+                             <div class="working__box">
+                                <p class="working__text">мобильные приложения</p>
                              </div>
                           </li>
 
 
                          <li class="working__photo">
                              <img src="./images/img3.jpg" alt= "Планшет" width="370"> 
-                             <div class="working__photo-box">
-                                <p class="working__photo-text">дизайнерские приложения</p>
+                             <div class="working__box">
+                                <p class="working__text">дизайнерские приложения</p>
                             </div>
                           </li>
                       
@@ -166,7 +167,7 @@
                 <div class="container">
                          <!--Наша команда-->
                      <h2 class="team">Наша команда</h2>
-                  <ul class="team__professionals-list">
+                  <ul class="team__professionals">
                         <li class="team__workers">
                            <img src="./images/img4.jpg" alt="Игорь Демьяненко" width="270"/>
 
@@ -482,9 +483,8 @@
                     <p class="mailing__subscription">Подпишитесь на рассылку</p>
                     <form class="form-footer" autocomplete="on" >
                         <div class="mailing-form">
-                            <label class="mail-label" for="mail"></label>
-                          
-                            <input type="email" class="mail-input" 
+                            <label class="mailing-form__label" for="mail"></label>
+                            <input type="email" class="mailing-form__input" 
                              name="name"  
                              id="mail"
                              placeholder="E-mail"
@@ -492,8 +492,8 @@
                             />
                             
                            
-                            <button type="submit" class="airplane">Подписаться
-                               <svg class="icon-icon">
+                            <button type="submit" class="mailing-form__airplane">Подписаться
+                               <svg class="mailing-form__icon">
                                   <use href="./images/icons 2.svg#icon-icon"></use>  
                                </svg>
                             </button>
@@ -510,8 +510,8 @@
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
 
-                <button type="button" class="icon-box" data-modal-close>
-                   <svg class="icon-close">
+                <button type="button" class="modal__box" data-modal-close>
+                   <svg class="modal__icon">
                       <use href="./images/icons 2.svg#icon-close-black"></use>  
                    </svg>
                 </button>  
@@ -520,46 +520,46 @@
 
                 <form class="form-modal" autocomplete="on">
 
-                    <p class="declare">
+                    <p class="form-modal__declare">
                         Оставьте свои данные, мы вам перезвоним
                     </p>
                    
-                    <div class="field-name">
+                    <div class="field">
                         
-                        <label class="form-label" for="name">имя</label>
+                        <label class="field__name" for="name">имя</label>
                           
-                         <input type="text" class="form-input" name="name" id="name" autofocus />
-                         <svg class="icon-person">
+                         <input type="text" class="field__input" name="name" id="name" autofocus />
+                         <svg class="field__person">
                             <use href="./images/icons 2.svg#icon-person"></use>  
                          </svg>
                        
     
                     </div>    
     
-                    <div class="field-tel">
-                        <label class="tel" for="tel">телефон</label>
+                    <div class="field">
+                        <label class="field__tel" for="tel">телефон</label>
                            
-                         <input type="tel" class="form-input" name="tel" id="tel" />
-                         <svg class="icon-phone">
+                         <input type="tel" class="field__input" name="tel" id="tel" />
+                         <svg class="field__phone">
                             <use href="./images/icons 2.svg#icon-phone"></use>  
                          </svg>
                        
                     </div>      
     
-                    <div class="field-email">          
-                        <label class="email" for="email">почта</label>
+                    <div class="field">          
+                        <label class="field__email" for="email">почта</label>
                             
-                          <input type="email" class="form-input" name="email" id="email" />
-                          <svg class="icon-email">
+                          <input type="email" class="field__input" name="email" id="email" />
+                          <svg class="field__icon">
                             <use href="./images/icons 2.svg#icon-email"></use>  
                          </svg>
                         
                     </div>  
     
-                    <div class="field-comment">
-                        <label class="comment" for="comment">Комментарий</label>   
+                    <div class="comment">
+                        <label class="comment__link" for="comment">Комментарий</label>   
                            
-                         <textarea class="comment-text" id="comment" name="comment" placeholder="Введите текст"></textarea>
+                         <textarea class="comment__text" id="comment" name="comment" placeholder="Введите текст"></textarea>
                         
                         
                     </div>
@@ -568,17 +568,17 @@
                    
                     <label class="policy" for="policy">
                         
-                         <input class="checkbox visually-hidden" type="checkbox" name="policy" id="policy" checked />
-                         <span class="icon"></span>
+                         <input class="policy__checkbox" type="checkbox" name="policy" id="policy" checked />
+                         <span class="policy__icon"></span>
                          Соглашаюсь с рассылкой и принимаю 
-                         <a href="" class="policy-link">Условия договора</a>  
-                         <svg class="icon-Vector-2">
+                         <a href="" class="policy__link">Условия договора</a>  
+                         <svg class="policy__Vector">
                             <use href="./images/icons 2.svg#icon-Vector-2"></use>  
                          </svg>
                          
                     </label>
 
-                    <button class="send" type="submit">Отправить</button>
+                    <button class="policy__send" type="submit">Отправить</button>
 
 
                 </form>

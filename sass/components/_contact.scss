@@ -50,20 +50,17 @@
    line-height: 1.14;
    letter-spacing: 0.02em;
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
   
-  .contact__link{
       &:hover,
       &:focus{
         color: $accent-color;
       }
-  }
-  
-  
+  } 
   
   .contact{
       @extend %list
   }
+  
   .contact__link{
     text-decoration: none;
   }
