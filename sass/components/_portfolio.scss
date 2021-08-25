@@ -1,7 +1,9 @@
-.body-portfolio{
+ 
+   .body-portfolio{
+    font-family: $main-font;
     background-color: $hero-text-color;
-   } 
-   
+   }
+
    .text{
        @extend %visually-hidden
    }

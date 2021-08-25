@@ -15,14 +15,14 @@
     display: block;
   }
  
-  .contact__item a{
+ 
+  
+  .contact__link{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .contact__link{
-    position: relative; 
+     
   }
    
   .contact__icon{
@@ -39,7 +39,10 @@
   
   .contact__link{
     position: relative;
-   display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
    padding-top: 32px;
    padding-bottom: 32px;
   

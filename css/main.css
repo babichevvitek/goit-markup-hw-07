@@ -99,10 +99,6 @@ ul, p {
   margin-right: 0;
 }
 
-.main-nav__item + .item {
-  margin-left: 50px;
-  margin-left: 0;
-}
 
 .main-nav__link {
   position: relative;
