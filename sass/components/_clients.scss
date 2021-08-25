@@ -55,7 +55,8 @@
         fill: $accent-color;
         background-color: $hero-text-color;
         border: 1px solid $accent-color;
-        background-color: $accent-color;
+    
+       
         
       }
    
@@ -66,12 +67,6 @@
    @extend %list
   }
   
-  .clients__link{
-     
-    &:hover{
-      background-color: $hero-text-color;  
-    }
-  
-  }
+ 
   
  
