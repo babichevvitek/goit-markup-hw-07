@@ -28,5 +28,5 @@
   }
   
   .logo-link{
-    text-decoration: none;
+    @extend %text;
   }

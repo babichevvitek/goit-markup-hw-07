@@ -23,7 +23,7 @@
   }
   
   .destination__link{
-    text-decoration: none;
+    @extend %text;
   }
   
   .destination__website{
@@ -64,7 +64,7 @@
    font-size: 14px;
    line-height: 1.72;
    letter-spacing: 0.03em;
-   transition: $color;
+   transition: color $transition;
   
     &:hover,
     &:focus{
@@ -73,7 +73,7 @@
   }
 
   .destination__studios{
-    text-decoration: none;
+    @extend %text;
   }
    /*--Присоединяйтесь--*/
 
@@ -123,7 +123,7 @@
    fill: $join-color;
    border-radius: 50%;
    background-color: $icon-background-color; 
-   transition: $background-color, $fill;
+   transition: background-color $transition, fill $transition;
 
     &:hover,
     &:focus{
@@ -213,7 +213,7 @@
    margin-left: 12px;
    cursor: pointer;
    border-color: transparent;
-   transition: $box-shadow;
+   transition: box-shadow $transition;
   
     &:hover,
     &:focus{ 

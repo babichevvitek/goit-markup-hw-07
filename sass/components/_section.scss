@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -55,5 +48,5 @@
    }
    
    .section__list{
-     @extend %list
+     @extend %list;
    }
