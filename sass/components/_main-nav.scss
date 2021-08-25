@@ -49,15 +49,13 @@
   height: 4px;
   background-color: $accent-color;
   border-radius: 2px; 
-  
   left: 0;
   bottom: -1px;
-  }
+}
   
-
-  .main-nav__link{
-    @extend %text;
-  }
+.main-nav__link{
+  @extend %text;
+}
 
 
 .main-nav__link.current{

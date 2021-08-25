@@ -6,10 +6,12 @@
   
   .contact__item{
     margin-left: 50px;
-  }
-  .contact__item:first-child {
-    margin-left: 0;
-  }
+
+     &:first-child {
+     margin-left: 0;
+    }
+  }  
+
   .contact__list{
     padding-left: 0;
     display: block;
