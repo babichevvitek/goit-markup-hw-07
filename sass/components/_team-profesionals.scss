@@ -77,11 +77,11 @@
    
    .team__item{
      margin-right: 10px;
-   }
-   
-   .team__item:last-child{
-     margin-right: 0;
-   }
+
+     &:last-child{
+       margin-right: 0;
+      }
+    }
    
    .team__icon{
      width: 20px;
@@ -104,9 +104,9 @@
      background-color: $hero-text-color;
      box-shadow: $box;
      border-radius: 0px 0px 4px 4px;
-   }
    
-   .team__workers:not(:last-child) {
-     margin-right: 30px;
-   }
+     &:not(:last-child) {
+       margin-right: 30px;
+      }
+    } 
    

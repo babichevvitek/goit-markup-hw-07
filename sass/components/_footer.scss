@@ -46,10 +46,10 @@
   .destination__kiev{
     margin-top: 0;
     margin-bottom: 9px;
-  }
-  
-  .destination__kiev:last-child{
-    margin-bottom: 0;
+
+   &:last-child{
+     margin-bottom: 0;
+    }
   }
   
   .destination__street{
@@ -79,7 +79,6 @@
 
    .join{
     width: 206px;
-    
     margin-left: 70px;
   }
 
@@ -137,9 +136,11 @@
   .join__list{
     margin-left: 0;
     margin-right: 10px;
-  }
-  .join__list:last-child{
-   margin-right: 0;
+  
+   &:last-child{
+     margin-right: 0;
+   }
+
   }
   
   .join__icon{
@@ -151,85 +152,74 @@
   
   
   .mailing{
-    width: 570px;
-    height: 86px;
     margin-left: 93px;
   }
   
   
   .mailing-form{
     display: flex;
+    align-items: center;
   }
   
   .mailing__subscription{
-    font-family: Roboto;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $hero-text-color;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
+    font-style: normal;
   }
 
   .mailing-form__input{ 
-   width: 358px;
-   height: 50px;
-   box-sizing: border-box;
-   border-radius: 4px;
-   background-color: $box-text-color;
-   cursor: pointer;
-   display: flex;
-   font-size: 16px;
-   line-height: 1.25;
-   letter-spacing: 0.03em;
-   display: flex;
-   align-items: center;
-   color: $main-color;
-   border: $main-border-color;
-   filter: $box-shadow-color;
-  
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    background: $box-text-color;
+    border-radius: 4px;
+    color: $main-color;
+    border: $main-border-color;
+    filter: $box-shadow-color;
+    outline: none;
+    cursor: pointer;
   }
-  
-  
-  .mailing-form__input{
-   padding-left: 16px;
-   outline:none;
-  
+
+  .form-footer{
+    display: flex;
   }
-  
+
   .mailing-form__airplane{
-    position: relative;
-    display: block;
-   width: 200px;
-   height: 50px;
-   font-weight: 700;
-   font-size: 16px;
-   line-height: 1.87;
-   letter-spacing: 0.06em;
-   background: $accent-color;
-   border-radius: 4px;
-   color: $hero-text-color;
-   margin-left: 12px;
-   cursor: pointer;
-   border-color: transparent;
-   transition: box-shadow $transition;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    margin-left: 12px;
+    padding: 10px 28px;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+   
+    background: $accent-color;
+    color: $hero-text-color;
+    transition: box-shadow $transition;
   
     &:hover,
     &:focus{ 
+      background-color: $accent-color;
       box-shadow: $box-shadow-color;
     } 
  
   } 
   .mailing-form__icon{
-    position: absolute;
     height: 24px;
     width: 24px;
-    right: 28px;
-    top: 13px;
+    margin-left: 10px;
    
   }
  
-  .mailing-form__airplane{
-  padding: 10px 62px 10px 29px;
-  }
+ 

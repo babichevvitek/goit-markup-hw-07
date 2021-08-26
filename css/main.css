@@ -722,8 +722,6 @@ ul, p {
 }
 
 .mailing {
-  width: 570px;
-  height: 86px;
   margin-left: 93px;
 }
 
@@ -731,63 +729,62 @@ ul, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mailing__subscription {
-  font-family: Roboto;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
+  font-style: normal;
 }
 
 .mailing-form__input {
   width: 358px;
   height: 50px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  padding-left: 16px;
+  background: #2F303A;
   border-radius: 4px;
-  background-color: #2F303A;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: 0px 4px 4px rgba(0, 0, 0, 0.15);
           filter: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
+  cursor: pointer;
 }
 
-.mailing-form__input {
-  padding-left: 16px;
-  outline: none;
+.form-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .mailing-form__airplane {
-  position: relative;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 200px;
   height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.06em;
-  background: #2196F3;
-  border-radius: 4px;
-  color: #ffffff;
   margin-left: 12px;
+  padding: 10px 28px;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
   cursor: pointer;
-  border-color: transparent;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2196F3;
+  color: #ffffff;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -795,20 +792,15 @@ ul, p {
 }
 
 .mailing-form__airplane:hover, .mailing-form__airplane:focus {
+  background-color: #2196F3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .mailing-form__icon {
-  position: absolute;
   height: 24px;
   width: 24px;
-  right: 28px;
-  top: 13px;
-}
-
-.mailing-form__airplane {
-  padding: 10px 62px 10px 29px;
+  margin-left: 10px;
 }
 
 .backdrop {
@@ -1293,16 +1285,16 @@ img {
   border-left: 1px solid #EEEEEE;
 }
 
-.portfolio:nth-child(3n) {
-  margin-right: 0;
-}
-
 .portfolio:nth-child(n + 7) {
   margin-bottom: 0;
 }
 
 .portfolio:nth-child(-n + 3) {
   margin-top: 0;
+}
+
+.portfolio:nth-child(3n) {
+  margin-right: 0;
 }
 
 .site-nav.link.current {

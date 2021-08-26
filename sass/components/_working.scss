@@ -21,17 +21,17 @@
    }
    
    .working__photo{
-       display: block;
-       width: 100%;
-      height: auto;
+    display: block;
+     width: 100%;
+     height: auto;
      position: relative;
      margin-left: 0;
      margin-right: 30px;
-   }
    
-   .working__photo:last-child{ 
-    margin-right: 0;
-   }
+     &:last-child{ 
+       margin-right: 0;
+      }
+    }
    
    .working__box{
      position: absolute;

@@ -10,9 +10,12 @@
      padding-bottom: 0;
    }
    
-   .section__one:not(:last-child) {
-     margin-right: 30px;
-   }
+   .section__one {
+     &:not(:last-child){
+      margin-right: 30px;
+     }
+     
+    }
    
    .section__five{
      display: flex;

@@ -59,18 +59,12 @@
 
    .site__two{
      margin-left: 8px;
-   }
-   
-   .site__two:first-child{ 
-     margin-left: 0;
+  
+     &:first-child{ 
+       margin-left: 0;
+     }
+
     }
-   
-   
-    
-    
-    
-   
-   
    
    .pictures{
      
@@ -113,18 +107,23 @@
      border-left: 1px solid #EEEEEE;
    }
    
-   .portfolio:nth-child(3n) {
-     margin-right: 0;
+   
+   .portfolio {
+
+     &:nth-child(n + 7){
+       margin-bottom: 0;
      }
-   
-   .portfolio:nth-child(n + 7) {
-    margin-bottom: 0;
-   }
-   
-   .portfolio:nth-child(-n + 3) {
-   margin-top: 0;
-   }
-   
+
+     &:nth-child(-n + 3){
+       margin-top: 0;
+     }
+
+     &:nth-child(3n){
+       margin-right: 0;
+     }
+
+    }
+    
    .site-nav.link.current{
     color: $accent-color;
    }
