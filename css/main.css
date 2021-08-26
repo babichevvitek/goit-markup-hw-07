@@ -1293,10 +1293,6 @@ img {
   margin-right: 0;
 }
 
-.site-nav.link.current {
-  color: #2196F3;
-}
-
 .signature__decoration {
   margin-top: 0;
   margin-bottom: 4px;
@@ -1337,7 +1333,8 @@ img {
   background: rgba(33, 150, 243, 0.9);
 }
 
-.portfolio__overlay:hover, .portfolio__overlay:focus {
+.portfolio__sites:hover .portfolio__overlay,
+.portfolio__sites:focus .portfolio__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
@@ -1359,6 +1356,5 @@ img {
   line-height: 1.55;
   color: #ffffff;
   letter-spacing: 0.03em;
-  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */

@@ -122,9 +122,7 @@
 
     }
     
-   .site-nav.link.current{
-    color: $accent-color;
-   }
+  
    
    .portfolio{
     @extend %list;
@@ -156,9 +154,9 @@
    .portfolio__thumb{
      position: relative;
      overflow: hidden;
-   }
+    }
    
-   .portfolio__overlay{
+    .portfolio__overlay{
      position: absolute;
      top: 0;
      left: 0;
@@ -169,14 +167,14 @@
      transition: transform $transition;
      background: rgba(33, 150, 243, 0.9);
 
-     &:hover,
-     &:focus{
-      transform: translateY(0);
-      opacity: 1;
-     }
+      
+    }
 
-   }
-   
+    .portfolio__sites:hover .portfolio__overlay,
+    .portfolio__sites:focus .portfolio__overlay{
+     transform: translateY(0);
+     opacity: 1;
+    }
    
    
 
@@ -195,7 +193,7 @@
      line-height: 1.55;
      color: $hero-text-color;
      letter-spacing: 0.03em;
-     opacity: 1;
-    
+     
+     
     
     }
